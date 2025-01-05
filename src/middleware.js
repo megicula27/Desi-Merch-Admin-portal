@@ -6,7 +6,7 @@ export async function middleware(req) {
   const url = req.nextUrl.clone();
 
   // If user is not logged in and tries to access a protected route
-  if (!token && url.pathname.startsWith("/")) {
+  if (!token && url.pathname.startsWith("/protected")) {
     url.pathname = "/auth"; // Redirect unauthenticated users to login
     return NextResponse.redirect(url);
   }

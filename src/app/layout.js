@@ -1,8 +1,7 @@
 import "./globals.css";
+import AuthProvider from "@/providers/AuthProvider";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Sidebar } from "@/components/ui/sidebar";
-import AuthProvider from "@/providers/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +21,7 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex h-screen bg-background">
-              <Sidebar />
-              <main className="flex-1 overflow-x-hidden overflow-y-auto bg-background">
-                <div className="container mx-auto px-6 py-8">{children}</div>
-              </main>
-            </div>
+            {children}
           </ThemeProvider>
         </AuthProvider>
       </body>

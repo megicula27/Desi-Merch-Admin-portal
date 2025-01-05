@@ -16,13 +16,13 @@ import {
 
 const sidebarItems = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Products", href: "/products", icon: Package },
-  { name: "Orders", href: "/orders", icon: ShoppingCart },
-  { name: "Customers", href: "/customers", icon: Users },
-  { name: "Transactions", href: "/transactions", icon: CreditCard },
-  { name: "Analytics", href: "/analytics", icon: BarChart },
-  { name: "Settings", href: "/settings", icon: Settings },
-  { name: "Logs", href: "/logs", icon: Activity },
+  { name: "Products", href: "/admin/products", icon: Package },
+  { name: "Orders", href: "/admin/orders", icon: ShoppingCart },
+  { name: "Customers", href: "/admin/customers", icon: Users },
+  { name: "Transactions", href: "/admin/transactions", icon: CreditCard },
+  { name: "Analytics", href: "/admin/analytics", icon: BarChart },
+  { name: "Settings", href: "/admin/settings", icon: Settings },
+  { name: "Logs", href: "/admin/logs", icon: Activity },
 ];
 
 export function Sidebar() {
